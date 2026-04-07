@@ -13,14 +13,16 @@ If for some reason you don't want overwrite the existing application files 'cont
 - replace 'user/no_privileges' by 'authentication/no_privileges'
 - replace 'user/logout' by 'authentication/logout'
 
-### FOR VERSION > 1.5
+### FOR VERSION >= 1.6
 replace:
 -         //$this->load->view('pages/login');
-by        redirect('authentication/login');
+by        
+-        redirect('authentication/login');
 in application\controllers\login
 
 -        //$this->load->view('pages/logout');
-by    redirect('authentication/logout');
+by
+-        redirect('authentication/logout');
 in application\controllers\logout
 
 ### CONFIGURATION
